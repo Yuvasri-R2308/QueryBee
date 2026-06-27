@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🐝 QueryBee AI</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <h1>🐝 QueryBee</h1>
+            <p>AI Customer Support</p>
+        </div>
+
+        <button class="new-chat">
+            <i class="fa-solid fa-plus"></i> New Chat
+        </button>
+
+        <div class="menu">
+
+            <div class="item">
+                📦 Order Tracking
+            </div>
+
+            <div class="item">
+                💸 Refund Support
+            </div>
+
+            <div class="item">
+                💳 Payment Issues
+            </div>
+
+            <div class="item">
+                🚚 Shipping Status
+            </div>
+
+            <div class="item">
+                📞 Contact Support
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main Chat -->
+    <div class="chat-section">
+
+        <div class="chat-header">
+            <h2>🐝 QueryBee AI Assistant</h2>
+            <span>AI-Powered Customer Support</span>
+        </div>
+
+        <div id="chatbox" class="chatbox">
+
+            <div class="bot-message">
+                👋 Hello! Welcome to QueryBee.<br>
+                How can I help you today?
+            </div>
+
+        </div>
+
+        <div class="quick-actions">
+
+            <button onclick="sendQuick('Track my order')">
+                📦 Track Order
+            </button>
+
+            <button onclick="sendQuick('Refund request')">
+                💸 Refund
+            </button>
+
+            <button onclick="sendQuick('Payment issue')">
+                💳 Payment
+            </button>
+
+            <button onclick="sendQuick('Shipping status')">
+                🚚 Shipping
+            </button>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message..."
+            >
+
+            <button onclick="sendMessage()">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

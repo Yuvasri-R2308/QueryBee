@@ -1,0 +1,90 @@
+{
+"greeting": {
+"patterns": ["hi", "hello", "hey"],
+"response": "Hello! Welcome to QueryBee. How can I help you today?"
+},
+
+"order_tracking": {
+"patterns": [
+"where is my order",
+"track my order",
+"order status",
+"check order status"
+],
+"response": "Please provide your Order ID (Example: ORD001)."
+},
+
+"shipping": {
+"patterns": [
+"shipping time",
+"delivery time",
+"when will it arrive",
+"expected delivery",
+"how long to ship",
+"delivery timeline"
+],
+"response": "Orders are usually delivered within 3-7 business days depending on your location."
+},
+
+"refund": {
+"patterns": [
+"refund",
+"money back",
+"return product",
+"cash back"
+],
+"response": "Refund requests can be submitted within 7 days of delivery."
+},
+
+"cancel": {
+"patterns": [
+"cancel order",
+"cancel my order",
+"order cancellation"
+],
+"response": "Please provide your Order ID to cancel the order."
+},
+
+"payment": {
+"patterns": [
+"payment failed",
+"payment issue",
+"transaction failed"
+],
+"response": "Please verify your payment details and try again."
+},
+
+"product": {
+"patterns": [
+"product information",
+"product details",
+"tell me about my product"
+],
+"response": "Please provide your Order ID so I can check your product details."
+},
+
+"support": {
+"patterns": [
+"help",
+"support",
+"customer care"
+],
+"response": "Contact [support@querybee.com](mailto:support@querybee.com) for assistance."
+},
+
+"thanks": {
+"patterns": [
+"thanks",
+"thank you"
+],
+"response": "You're welcome! Happy to help."
+},
+
+"goodbye": {
+"patterns": [
+"bye",
+"goodbye"
+],
+"response": "Thank you for using QueryBee. Have a great day!"
+}
+}
