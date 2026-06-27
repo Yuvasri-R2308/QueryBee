@@ -1,4 +1,4 @@
-# QueryBee – AI Customer Support Chatbot
+🐝 QueryBee – AI Customer Support Chatbot
 
 ## Overview
 
